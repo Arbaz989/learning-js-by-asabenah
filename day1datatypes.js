@@ -213,8 +213,8 @@ let arr = "  adf faf afa  "
 console.log(arr.trim())
 console.log(arr.trimEnd())
 
-let age = "foreen"
-console.log(age.toUpperCase())
+let ages = "foreen"
+console.log(ages.toUpperCase())
 
 
 // you can access gives you different strings at different length 
@@ -341,6 +341,251 @@ let anum = 'punctual hai apne time par ati hai'
 
 console.log(anum.search('hai'))
 console.log(anum.search(/ati/gi))
+
+ /*
+ match: it takes a substring or regular expression pattern as an argument and it returns an array if there is match if not it returns null.
+  Let us see how a regular expression pattern looks like. It starts with / sign and ends with / sign.
+*/
+
+let stringe = 'love'
+let patternOne = /love/     // with out any flag
+let patternTwo = /love/gi   // g-means to search in the whole text, i - case insensitive
+
+
+let txt = 'In 2019, I ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge'
+let regEx = /\d+/
+
+// d with escape character means d not a normal d instead acts a digit
+// + means one or more digit numbers,
+// if there is g after that it means global, search everywhere.
+
+console.log(txt.match(regEx))  // ["2", "0", "1", "9", "3", "0", "2", "0", "2", "0"]
+console.log(txt.match(/\d+/g)) // ["2019", "30", "2020"]
+
+// repeat(): it takes a number as argument and it returns the repeated version of the string.
+
+let stringx = 'love'
+console.log(stringx.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
+
+//  checking datatypes
+
+
+// Different javascript data types
+// Let's declare different data types
+
+let firstName = 'Asabeneh'      // string
+let lastName = 'Yetayeh'        // string
+let country = 'Finland'         // string
+let city = 'Helsinki'           // string
+let ager = 250                   // number, it is not my real age, do not worry about it
+let job                         // undefined, because a value was not assigned
+
+console.log(typeof 'Asabeneh')  // string
+console.log(typeof firstName)   // string
+console.log(typeof 10)          // number
+console.log(typeof 3.14)        // number
+console.log(typeof true)        // boolean
+console.log(typeof false)       // boolean
+console.log(typeof NaN)         // number
+console.log(typeof job)         // undefined
+console.log(typeof undefined)   // undefined
+console.log(typeof null)        // object
+
+
+
+/*
+Changing Data Type (Casting)
+Casting: Converting one data type to another data type. We use parseInt(), parseFloat(), Number(), + sign, str() When we do arithmetic operations string numbers should be first converted to integer or float if not it returns an error.
+String to Int
+We can convert string number to a number. Any number inside a quote is a string number. An example of a string number: '10', '5', etc. We can convert string to number using the following methods:
+
+parseInt()
+Number()
+Plus sign(+)
+
+
+*/
+
+
+
+
+
+
+let numm = '10'
+
+let nummInt = parseInt(numm)
+console.log(nummInt)
+
+let nc = '34'
+let mm = Number(nc)
+console.log(mm)
+
+let n = '45'
+
+let nFloat  = parseFloat(n)
+console.log(n)
+
+let ss = '10'
+let sn=+ss
+console.log(sn)
+
+/*
+
+
+String to Float
+We can convert string float number to a float number. Any float number inside a quote is a string float number. An example of a string float number: '9.81', '3.14', '1.44', etc. We can convert string float to number using the following methods:
+
+parseFloat()
+Number()
+Plus sign(+)
+*/
+
+/*
+let num = '9.81'
+let numFloat = parseFloat(num)
+
+console.log(numFloat) // 9.81
+let num = '9.81'
+let numFloat = Number(num)
+
+console.log(numFloat) // 9.81
+let num = '9.81'
+let numFloat = +num
+
+console.log(numFloat) // 9.81
+
+*/
+
+
+// Float to Int
+let nuum = 9.81
+let numInt = parseInt(nuum)
+
+console.log(numInt) // 9
+
+  // ********************************LEVEL 1*****************************************************//
+
+//1:  Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'. 
+let challenge = '30 Days of JavaScript'
+// 2:Print the string on the browser console using console.log()
+console.log(challenge)
+// 3:Print the length of the string on the browser console using console.log()
+console.log(challenge.length)
+// 4:Change all the string characters to capital letters using toUpperCase() method
+console.log(challenge.toLocaleUpperCase())
+// 5:Cut (slice) out the first word of the string using substr() or substring() method
+console.log(challenge.substring(0,1))
+// 6:Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+let cut = '30 Days Of JavaScript'
+console.log(cut.indexOf('D'))
+console.log(cut.lastIndexOf('t'))
+
+let count = cut.slice(0,2)
+console.log(count)
+// 7:Check if the string contains a word Script using includes() method
+
+let stringse = 'script of java '
+console.log(strings.includes('script'))
+// 8:Split the string into an array using split() method
+
+console.log(strings.split())
+
+
+// 9:Split the string 30 Days Of JavaScript at the space using split() method
+
+console.log(challenge.split(' '))
+//10: 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+
+let companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+console.log(companies.split(','))
+
+// 11:Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+
+let change = challenge.replace('JavaScript','Python')
+console.log(change)
+//12: What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+console.log(challenge.charAt(15))
+// 13:What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+console.log(challenge.charCodeAt('J'))
+// 14: Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
