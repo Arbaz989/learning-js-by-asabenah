@@ -511,8 +511,106 @@ console.log(challenge.charCodeAt('J'))
 
 
 
+// *****************************************DAY 4************************************//
+
+/* 15:Use indexOf to find the position of the first occurrence of the word because in the following sentence:
+'You cannot end a sentence with because because because is a conjunction'
+*/
+
+let because = 'You cannot end a sentence with because because because is a conjunction'
+console.log(because.lastIndexOf('because'))
+
+// 16: Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+let challenges = ' 30 Days Of JavaScript '
+console.log(challenges.trim())
+
+// 17:Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+
+let methods = '30 Days Of JavaScript'
+console.log(methods.startsWith('30'))
+// 18: Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+console.log(methods.endsWith('JavaScript'))
+// 19:Use match() method to find all the a’s in 30 Days Of JavaScript
+console.log(methods.match(/a/g))
+// 20:Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+let halfString = '30 Days of';
+let otherHalf ='JavaScript'
+let fullWord =halfString+=otherHalf
+console.log(fullWord)
+let othersHalf = halfString.concat('')
+console.log(othersHalf)
+
+// 21:Use repeat() method to print 30 Days Of JavaScript 2 times
+let repetetion = 'abey ja na '
+console.log(repetetion.repeat(2))
 
 
+
+                          //  Exercise: Level 2
+
+
+  //  1: Using console.log() print out the following statement:
+   console.log("The quote \'There is no exercise better for the heart than reaching down and lifting people up.\'by John Holmes teaches us to help one another.") 
+
+// 2:Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+let stringsss = '10'
+console.log(typeof(stringsss))
+let newString = Number(stringsss)
+console.log(typeof(newString))
+
+// 3:Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+let floatNyber = 9.8
+let ff = parseFloat(floatNyber)
+if (ff!==10) {
+  ff = Math.ceil(ff)
+} 
+
+console.log(typeof(ff))
+
+
+// 4:Check if 'on' is found in both python and jargon
+
+let py = 'python'
+let jar = 'jargonn'
+
+
+if(py.match('on') && jar.match('on')){
+  console.log('yes both contains on')
+}else{
+  console.log('one or other dosnot contain on')
+}
+
+
+// another way to do it using string method
+let containsInBoth = py.includes('on') && jar.includes('on')
+
+console.log(containsInBoth)
+
+
+// 5:I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+let course = 'I hope this course is not full of jargon'
+console.log(course.includes('jargon'))
+
+// 6:Generate a random number between 0 and 100 inclusively.
+let randomNumbers = Math.random()
+let between = randomNumber*100
+let bases = Math.ceil(between) // make it ceil or floor base on the need
+console.log(bases)
+
+// 7:Generate a random number between 50 and 100 inclusively.
+
+
+let numFirst =Math.floor(Math.random()*51)+50
+console.log(numFirst)
+
+
+// 8:Generate a random number between 0 and 255 inclusively.
+let randonNumber = Math.random()
+let bRandom = randonNumber*255
+let brr = Math.floor(bRandom)
+console.log(brr)
 
 
 
